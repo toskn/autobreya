@@ -12,8 +12,8 @@
 <tbody>
 <tr>
 <td><strong>1</strong></td>
-<td></td>
-<td><a href=""><em>Код</em></a></td>
+<td>Анализ комментариев ВК</td>
+<td><a href="https://github.com/toskn/autobreya/blob/master/HW1_VK_API.ipynb"><em>Код</em></a></td>
 </tr>
 
 </tbody>
