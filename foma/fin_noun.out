@@ -1,0 +1,472 @@
+talo+Sg+Nom	talo
+
+talo+Pl+Nom	talot
+
+talo+Sg+Gen	talon
+
+talo+Pl+Gen	talojen
+
+talo+Sg+Part	taloa
+
+talo+Pl+Part	taloja
+
+talo+Sg+In	talossa
+
+talo+Pl+In	taloissa
+
+	+?
+
+elämä+Sg+Nom	elämä
+
+elämä+Pl+Nom	elämät
+
+elämä+Sg+Gen	elämän
+
+elämä+Pl+Gen	elämien
+
+elämä+Sg+Part	elämää
+
+elämä+Pl+Part	elämiä
+
+elämä+Sg+In	elämässä
+
+elämä+Pl+In	elämissä
+
+	+?
+
+kuu+Sg+Nom	kuu
+
+kuu+Pl+Nom	kuut
+
+kuu+Sg+Gen	kuun
+
+kuu+Pl+Gen	kuiden
+
+kuu+Sg+Part	kuuta
+
+kuu+Pl+Part	kuita
+
+kuu+Sg+In	kuussa
+
+kuu+Pl+In	kuissa
+
+	+?
+
+työ+Sg+Nom	työ
+
+työ+Pl+Nom	työt
+
+työ+Sg+Gen	työn
+
+työ+Pl+Gen	töiden
+
+työ+Sg+Part	työtä
+
+työ+Pl+Part	töitä
+
+työ+Sg+In	työssä
+
+työ+Pl+In	töissä
+
+	+?
+
+sukka+Sg+Nom	sukka
+
+sukka+Pl+Nom	sukat
+
+sukka+Sg+Gen	sukan
+
+sukka+Pl+Gen	sukkien
+
+sukka+Sg+Part	sukkaa
+
+sukka+Pl+Part	sukkia
+
+sukka+Sg+In	sukassa
+
+sukka+Pl+In	sukissa
+
+	+?
+
+poika+Sg+Nom	poika
+
+poika+Pl+Nom	pojat
+
+poika+Sg+Gen	pojan
+
+poika+Pl+Gen	poikien
+
+poika+Sg+Part	poikaa
+
+poika+Pl+Part	poikia
+
+poika+Sg+In	pojassa
+
+poika+Pl+In	pojissa
+
+	+?
+
+kaappi+Pl+In	kaapissa
+
+matto+Pl+All	mattoille
+
+kukka+Sg+Gen	kukan
+
+	+?
+
+tupa+Sg+In	tuvassa
+
+katu+Sg+All	kadulle
+
+vihta+Sg+All	vihdalle
+
+poika+Sg+All	pojalle
+
+jalka+Sg+Gen	jalan
+
+	+?
+
+matka+Pl+In	matkoissa
+
+kirja+Pl+Part	kirjoja
+
+piha+Pl+All	pihoille
+
+herra+Pl+Gen	herrojen
+
+	+?
+
+koira+Pl+Gen	koirien
+
+poika+Pl+All	pojille
+
+muna+Pl+Part	munia
+
+kuuma+Pl+In	kuumissa
+
+	+?
+
+kampa+Sg+All	kammalle
+
+kenkä+Pl+Nom	kengät
+
+ilta+Sg+All	illalle
+
+kerta+Sg+Gen	kerran
+
+suku+Sg+In	suvussa
+
+	+?
+
+puu+Pl+Part	puita
+
+tie+Pl+All	teille
+
+	+?
+
+avain+Sg+Nom	avain
+
+avain+Sg+Part	avainta
+
+avain+Sg+Gen	avaimen
+
+avain+Pl+In	avaimissa
+
+	+?
+
+työtön+Sg+Nom	työtön
+
+työtön+Sg+Part	työtöntä
+
+työtön+Sg+Gen	työttömen
+
+työtön+Pl+In	työttömissä
+
+	+?
+
+talo+Sg+Ill	taloon
+
+talo+Pl+Ill	taloihin
+
+talo+Sg+In	talossa
+
+talo+Pl+In	taloissa
+
+talo+Sg+El	talosta
+
+talo+Pl+El	taloista
+
+talo+Sg+Ad	talolla
+
+talo+Pl+Ad	taloilla
+
+talo+Sg+Abl	talolta
+
+talo+Pl+Abl	taloilta
+
+talo+Sg+All	talolle
+
+talo+Pl+All	taloille
+
+	+?
+
+koulu+Sg+Ill	kouluun
+
+koulu+Pl+Ill	kouluihin
+
+koulu+Sg+In	koulussa
+
+koulu+Pl+In	kouluissa
+
+koulu+Sg+El	koulusta
+
+koulu+Pl+El	kouluista
+
+koulu+Sg+Ad	koululla
+
+koulu+Pl+Ad	kouluilla
+
+koulu+Sg+Abl	koululta
+
+koulu+Pl+Abl	kouluilta
+
+koulu+Sg+All	koululle
+
+koulu+Pl+All	kouluille
+
+	+?
+
+kaupunki+Sg+Ill	kauvunkiin
+
+kaupunki+Pl+Ill	kauvunkihin
+
+kaupunki+Sg+In	kauvungissa
+
+kaupunki+Pl+In	kauvungissa
+
+kaupunki+Sg+El	kauvungista
+
+kaupunki+Pl+El	kauvungista
+
+kaupunki+Sg+Ad	kauvungilla
+
+kaupunki+Pl+Ad	kauvungilla
+
+kaupunki+Sg+Abl	kauvungilta
+
+kaupunki+Pl+Abl	kauvungilta
+
+kaupunki+Sg+All	kauvungille
+
+kaupunki+Pl+All	kauvungille
+
+	+?
+
+kunta+Sg+Ill	kuntaan
+
+kunta+Pl+Ill	kuntihin
+
+kunta+Sg+In	kunnassa
+
+kunta+Pl+In	kunnissa
+
+kunta+Sg+El	kunnasta
+
+kunta+Pl+El	kunnista
+
+kunta+Sg+Ad	kunnalla
+
+kunta+Pl+Ad	kunnilla
+
+kunta+Sg+Abl	kunnalta
+
+kunta+Pl+Abl	kunnilta
+
+kunta+Sg+All	kunnalle
+
+kunta+Pl+All	kunnille
+
+	+?
+
+sairaala+Sg+Ill	sairaalaan
+
+sairaala+Pl+Ill	sairaaloihin
+
+sairaala+Sg+In	sairaalassa
+
+sairaala+Pl+In	sairaaloissa
+
+sairaala+Sg+El	sairaalasta
+
+sairaala+Pl+El	sairaaloista
+
+sairaala+Sg+Ad	sairaalalla
+
+sairaala+Pl+Ad	sairaaloilla
+
+sairaala+Sg+Abl	sairaalalta
+
+sairaala+Pl+Abl	sairaaloilta
+
+sairaala+Sg+All	sairaalalle
+
+sairaala+Pl+All	sairaaloille
+
+	+?
+
+maa+Sg+Ill	maahan
+
+maa+Pl+Ill	maihin
+
+maa+Sg+In	maassa
+
+maa+Pl+In	maissa
+
+maa+Sg+El	maasta
+
+maa+Pl+El	maista
+
+maa+Sg+Ad	maalla
+
+maa+Pl+Ad	mailla
+
+maa+Sg+Abl	maalta
+
+maa+Pl+Abl	mailta
+
+maa+Sg+All	maalle
+
+maa+Pl+All	maille
+
+	+?
+
+kala+Sg+Ill	kalaan
+
+kala+Pl+Ill	kaloihin
+
+kala+Sg+In	kalassa
+
+kala+Pl+In	kaloissa
+
+kala+Sg+El	kalasta
+
+kala+Pl+El	kaloista
+
+kala+Sg+Ad	kalalla
+
+kala+Pl+Ad	kaloilla
+
+kala+Sg+Abl	kalalta
+
+kala+Pl+Abl	kaloilta
+
+kala+Sg+All	kalalle
+
+kala+Pl+All	kaloille
+
+	+?
+
+suu+Sg+Ill	suuhun
+
+suu+Pl+Ill	suihin
+
+suu+Sg+In	suussa
+
+suu+Pl+In	suissa
+
+suu+Sg+El	suusta
+
+suu+Pl+El	suista
+
+suu+Sg+Ad	suulla
+
+suu+Pl+Ad	suilla
+
+suu+Sg+Abl	suulta
+
+suu+Pl+Abl	suilta
+
+suu+Sg+All	suulle
+
+suu+Pl+All	suille
+
+	+?
+
+perhe+Sg+Ill	perheen
+
+perhe+Pl+Ill	perheihin
+
+perhe+Sg+In	perhessä
+
+perhe+Pl+In	perheissä
+
+perhe+Sg+El	perhestä
+
+perhe+Pl+El	perheistä
+
+perhe+Sg+Ad	perhellä
+
+perhe+Pl+Ad	perheillä
+
+perhe+Sg+Abl	perheltä
+
+perhe+Pl+Abl	perheiltä
+
+perhe+Sg+All	perhelle
+
+perhe+Pl+All	perheille
+
+	+?
+
+vapaa+Sg+Ill	vapaaseen
+
+vapaa+Pl+Ill	vapaihin
+
+vapaa+Sg+In	vapaassa
+
+vapaa+Pl+In	vapaissa
+
+vapaa+Sg+El	vapaasta
+
+vapaa+Pl+El	vapaista
+
+vapaa+Sg+Ad	vapaalla
+
+vapaa+Pl+Ad	vapailla
+
+vapaa+Sg+Abl	vapaalta
+
+vapaa+Pl+Abl	vapailta
+
+vapaa+Sg+All	vapaalle
+
+vapaa+Pl+All	vapaille
+
+	+?
+
+vaikea+Sg+Ill	vaikeaan
+
+vaikea+Pl+Ill	vaikaihin
+
+vaikea+Sg+In	vaikeassa
+
+vaikea+Pl+In	vaikaissa
+
+vaikea+Sg+El	vaikeasta
+
+vaikea+Pl+El	vaikaista
+
+vaikea+Sg+Ad	vaikealla
+
+vaikea+Pl+Ad	vaikailla
+
+vaikea+Sg+Abl	vaikealta
+
+vaikea+Pl+Abl	vaikailta
+
+vaikea+Sg+All	vaikealle
+
+vaikea+Pl+All	vaikaille
+
+	+?
+

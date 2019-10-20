@@ -1,0 +1,102 @@
+# Задаем информацию об алфавите и типах гласных
+define Consonant b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z ;
+define FrontVowel ä | ö | y ;
+define NeutralVowel e | i ;
+define BackVowel a | o | u ;
+define Vowel FrontVowel | NeutralVowel | BackVowel | A | E;
+define Letter Vowel | Consonant;
+
+# Задаем какие будут характеристики у финских имен
+define Case "+Nom" | "+Gen" | "+Part" | "+In" | "+El" | "+Ill" | "+Ad" | "+Abl" | "+All" ;
+define Number "+Sg" | "+Pl" ; 
+
+# Описываем какие бывают типы основ в зависимости от вида гласных.
+define FrontStem [Consonant* [ FrontVowel | NeutralVowel ] ]+ Consonant*;
+define BackStem [Consonant* [ BackVowel | NeutralVowel ] ]* [Consonant* BackVowel] [Consonant* [ BackVowel | NeutralVowel ] ]* Consonant*;
+define Stem Letter+;
+
+define Input Stem Number Case;
+
+# Создание номинативной формы
+define NomPl "+Pl" "+Nom" -> "^" t || _ ;
+define NomSg "+Sg" "+Nom" -> "^" || _ ;
+define Nominatives NomPl .o. NomSg ;
+
+# Создание генетивной формы
+define GenDen "+Gen" -> d e n || Vowel Vowel "+Pl" _ ;
+define Gen "+Gen" -> E n || _ ;
+define Genetive GenDen .o. Gen ;
+
+# Создание партитива
+define PartTa "+Part" -> t A || [ Consonant Vowel Vowel | Consonant ] Number _ ;
+define PartA "+Part" -> A || _ ;
+
+# Cоздание иллатива - вставляем h, которого не было и пишем seen при многосложном и на долгую гласную в нф
+define HInsert [..] -> h || .#. Consonant+ Vowel+ "+Sg" _ "+Ill";
+define SeenIll "+Ill" -> s e e n || Vowel+ Consonant+ [ a a | o o | u u | e e | i i | ä ä | ö ö | y y ] "+Sg" _ ;
+define PLIll "+Ill" -> h i n || Vowel "+Pl" _ ;
+
+# теперь делаем гласный в добавке такой же, как в корне, «h» или нет или он один(-hVn), все хорошо
+define äIll "+Ill" -> ä n || ä "+Sg" h^{0,1} _ ;
+define yIll "+Ill" -> y n || y "+Sg" h^{0,1} _ ;
+define öIll "+Ill" -> ö n || ö "+Sg" h^{0,1} _ ;
+define uIll "+Ill" -> u n || u "+Sg" h^{0,1} _ ;
+define aIll "+Ill" -> a n || a "+Sg" h^{0,1} _ ;
+define eIll "+Ill" -> e n || e "+Sg" h^{0,1} _ ;
+define oIll "+Ill" -> o n || o "+Sg" h^{0,1} _ ; 
+define iIll "+Ill" -> i n || i "+Sg" h^{0,1} _ ;
+
+define Ill äIll .o. yIll .o. öIll .o. uIll .o. aIll .o. eIll .o. oIll .o. iIll ;
+
+# иллатив совмещен и закончен
+define Illative HInsert .o. PLIll .o. SeenIll .o. Ill ;
+
+# Вместо "+All" -> l l А грамматический переход происходит на 
+# l l e
+# дописываю и совмещаю локативные падежи 
+define LocativeRest "+In" -> s s A , "+El" -> s t A , "+Ad" -> l l A , "+Abl" -> l t A , "+All" -> l l e || _ ; 
+define LocativeCases LocativeRest  .o. Illative ;  
+define OtherCases PartTa .o. PartA .o. LocativeCases ;
+
+# Описание чередования гласных основы
+define Sg "+Sg" -> "^" || _ ;
+define OmitA ä -> 0, i -> 0 || _ "+Pl";
+define Ai2Oi a -> o || [ a | e | i ] Vowel* Consonant+ _ "+Pl";
+define Ai2i a -> 0 || [ o | u ] Vowel* Consonant+ _ "+Pl";
+define OmitFirst Vowel -> 0 || _ Vowel "+Pl" Consonant;
+define Pl "+Pl" -> "^" i || _ ;
+
+define NumberInfl Sg .o. OmitA .o. Ai2i .o. Ai2Oi .o. OmitFirst .o. Pl ;
+
+# Описание сингармонизма
+define JotPl i -> j || Vowel "^"* _ "^"* Vowel ;
+define HarmonyBack A -> a || BackStem "^" Letter* _;
+define HarmonyFront A -> ä || FrontStem "^" Letter* _;
+
+define Phonetics JotPl .o. HarmonyBack .o. HarmonyFront ;
+
+# Опущение Е и чередование согласных основы
+define DoublePTK p p -> p , t t -> t , k k -> k || Letter _ "^"* Vowel "^"* Consonant [ .#. | Consonant ] ;
+define SingleP p -> v || Vowel _ "^"* Vowel "^"* Consonant [ .#. | Consonant ] ;
+define SingleTK t -> d , k -> 0 || Letter _ "^"* Vowel "^"* Consonant [ .#. | Consonant ] ; 
+define TwoLetter m p -> m m , n t -> n n , n k -> n g , l t -> l l , r t -> r r || Letter _ "^"* Vowel "^"* Consonant [ .#. | Consonant ] ;
+define ThreeLetter l k e -> l j e , r k e -> r j e , h k e -> h j e , u k u -> u v u || Letter _ "^"* Consonant [ .#. | Consonant ] ;
+define N2M i n -> i m , t ö n -> t t ö m || _ "^" Vowel;
+define EOmit E -> 0 || Vowel "^" _;
+define EReal E -> e || _;
+
+# я пытался написать словоизменение для основ на согласный, у меня плохо получилось # define tine t -> e || [ u | y ] _ "^" "+Sg";
+# define lyhyt t -> i || [ u | y ] _ "^" s s [ a | ä];
+
+
+define Alternations N2M  .o. EOmit .o. EReal .o. ThreeLetter .o. TwoLetter .o. SingleP .o. SingleTK .o. DoublePTK ;
+
+# Совокупность всех особенностей изменения имени в финском
+define Affixes Nominatives .o. Genetive .o. OtherCases .o. NumberInfl .o. Alternations .o. Phonetics;
+
+# стирание метаразметки "^"
+define Cleanup "^" -> 0 || _ ;
+
+# компоновка последних двух пунктов - итоговая работа
+define Grammar Input .o. Affixes .o. Cleanup ;
+push Grammar
